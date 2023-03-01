@@ -1,5 +1,8 @@
+
+from pyreact2 import useState, render, createElement as el
+
 def App():
-  val, setVal = React.useState("")
+  val, setVal = useState("")
   
   def say_hello():
     setVal("Hello React!")
@@ -8,15 +11,9 @@ def App():
     setVal("")
 
   return [
-    React.createElement('button', {'onClick': say_hello}, "Click Me!"),
-    React.createElement('button', {'onClick': clear_it}, "Clear"),
-    React.createElement('div', None, val)
+    el('button', {'onClick': say_hello}, "Click Me!"),
+    el('button', {'onClick': clear_it}, "Clear"),
+    el('div', None, val)
   ]
 
-def render():
-  ReactDOM.render(
-    React.createElement(App, None),
-    document.getElementById('root')
-  )
-
-document.addEventListener('DOMContentLoaded', render)
+render(App, None, 'root')
