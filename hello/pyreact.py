@@ -1,13 +1,11 @@
 # __pragma__('skip')
-window = None
+require = None
 document = None
 # __pragma__('noskip')
-# Create local references to the React and ReactDOM Javascript libraries
-React = window.React
-ReactDOM = window.ReactDOM
-# Remove the React and ReactDOM JavaScript libraries from the global namespace
-# __pragma__('js', 'delete window.React;')
-# __pragma__('js', 'delete window.ReactDOM;')
+# Load the React and ReactDOM libraries into the local namespace
+React = require('react')
+ReactDOM = require('react-dom')
+# Map React objects to Python identifiers
 createElement = React.createElement
 useState = React.useState
 

@@ -1,2 +1,1 @@
-transcrypt --nomin --map react_hello
-python3 -m http.server
+npx parcel --log-level 4 --no-cache react_hello.html
