@@ -1,9 +1,13 @@
 # __pragma__('skip')
-React = None
-ReactDOM = None
+window = None
 document = None
-# Map React Javascript objects to Python identifiers
 # __pragma__('noskip')
+# Create local references to the React and ReactDOM Javascript libraries
+React = window.React
+ReactDOM = window.ReactDOM
+# Remove the React and ReactDOM JavaScript libraries from the global namespace
+# __pragma__('js', 'delete window.React;')
+# __pragma__('js', 'delete window.ReactDOM;')
 createElement = React.createElement
 useState = React.useState
 

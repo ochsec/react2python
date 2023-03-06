@@ -1,5 +1,5 @@
 
-from pyreact2 import useState, render, createElement as el
+from pyreact import useState, render, createElement as el
 
 def App():
   val, setVal = useState("")
