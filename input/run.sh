@@ -1,0 +1,1 @@
+npx parcel --log-level 4 --no-cache react_hello.html
