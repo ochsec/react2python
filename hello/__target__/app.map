@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "react_hello.js",
+	"file": "app.js",
 	"sources": [
-		"react_hello.py"
+		"app.py"
 	],
 	"mappings": "AAAA;AACA;AAAA;AADA;AAGA;AACA;AAAA;AAAA;AAEA;AACA;AAAA;AAEA;AACA;AAAA;AAKA;AAAA;AAGA;AAjBA"
 }
